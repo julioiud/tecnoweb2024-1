@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "487f7f7a-0747-4119-b8c1-52310f9da441",
+		"name": "TECWEB2024-1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4683424"
+	},
+	"item": [
+		{
+			"name": "tiposproyecto",
+			"item": [
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"ensayo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4001/api/tiposproyectos/",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"tiposproyectos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultartodos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarporId",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"ensallo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4001/api/tiposproyectos/663ac418cd11b74c63c10fb0",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"tiposproyectos",
+								"663ac418cd11b74c63c10fb0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
