@@ -3,7 +3,8 @@ const {Schema, model} = require('mongoose')
 const TipoProyectoSchema = Schema({
     nombre : {
         type: String,
-        required: [true, 'Nombre requerido']
+        required: [true, 'Nombre requerido'],
+        unique: [true]
     },
     fechaCreacion : {
         type: Date,
